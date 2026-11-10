@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my website php</title>
+    </head>
+
+<body>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+    <p>Select your courses:</p>
+    <label>
+        <input type="checkbox" name="courses[]" value="ip"> IP
+    </label><br>
+    <label>
+        <input type="checkbox" name="courses[]" value="java"> Java
+    </label><br>
+    <label>
+        <input type="checkbox" name="courses[]" value="oop"> OOP
+    </label><br><br>
+    <input type="submit" value="Submit Courses">
+</form>
+
+ <form action="2.8_receiver.php" method="POST" style="margin: 10px; text-align: center;">
+     Item Name: <input style="margin-bottom: 10px;" type="text" name="item"><br>
+     Quantity: <input style="margin-bottom: 10px;" type="number" name="qty"><br>
+        <input type="submit" value="Order">
+    </form>
+</body></html>
